@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portpholio</title>
+    <link rel="stylesheet" href="style_portpholio.css">
+    <script src="https://kit.fontawesome.com/a39781fe9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+               
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav> 
+            <div class="header-text">
+                
+                <h1>Hi, I'm <span>Shweta Rathod</span>  </h1>
+                
+                <p >Web Developer And<br> Competative Programmer</p>
+            </div>
+        </div>
+    </div>
+    <!------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/shweta4.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtiltle">About Me</h1>
+                    <p>Hello and welcome to my portpholio website!!  
+                        My name is Shweta Rathod, I am currently pursuing my B tech degree in Computer Science and Engineering.
+                         I am a passionate learner and aspiring technologist.I specialized in front end developmet using HTML, CSS 
+                         and JavaScript. I enjoy working on projrcts that challenge me and allow me to learn new skills.
+                         I am lerning backend and practicing problems to sharpen problem solving skills.<p>
+                
+                        
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links "onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links "onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents " id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Website development </li>
+                            <li><span>DSA Learner</span><br>Data Structures And Algorithms</li>
+                            <li><span>C++ Programmer</span><br>Problem Solving</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>2022 - 2023</span><br>Self Project Practice and learning</li>
+                            <li><span>2023 - Current</span><br>Group Minor project at  GCOEA</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2018</span><br>10th Board At Adarsh Vidyalaya Chikhali </li>
+                            <li><span>2020</span><br>12th Board At Shivsai Jr college Buldana</li>
+                            <li><span>2021-2024</span><br>Currenty pursuing Btech Degree At GCOEA</li>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------Projects----------------------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtiltle">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-file-invoice"></i>
+                    <h2>Payment Form</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem at impedit suscipit officiis iure 
+                        doloremque voluptatum enim, odit quidem alias ut mollitia eius quaerat quisquam expedita. 
+                        Consequatur harum doloribus dolorem!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Portpholio website</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem at impedit suscipit officiis iure 
+                        doloremque voluptatum enim, odit quidem alias ut mollitia eius quaerat quisquam expedita. 
+                        Consequatur harum doloribus dolorem!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-clone"></i>
+                    <h2>IDBM Clone</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem at impedit suscipit officiis iure 
+                        doloremque voluptatum enim, odit quidem alias ut mollitia eius quaerat quisquam expedita. 
+                        Consequatur harum doloribus dolorem!</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------contact----------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <br>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>7020678239</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/SHWETA  YOGESH  RATHOD_Resume.pdf" download class="btn btn2">DownloadCV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+      <div class="copyright">
+            <p>Copyright © Shweta ,made by myself <i class="fa-solid fa-heart"></i></p>
+        </div>
+    
+    </div>
+
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+   </script> 
+   <script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right="0";
+    } 
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    } 
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw6ENCjsVptFsH7mJ10RBoDtdgB6jv5zAWSGsEBx2b3CbtGxTCxBPHO_E4lIh6hPs6hYQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
